@@ -1,0 +1,25 @@
+{
+  "scopeName": "source.waldbrand",
+  "name": "Waldbrand",
+  "patterns": [
+    {
+      "name": "keyword.control.waldbrand",
+      "match": "\\b(print|int|str|bool|ptr|object|if|else|elif|function)\\b"
+    },
+    {
+      "name": "comment.line.double-slash.waldbrand",
+      "begin": "//",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.waldbrand" }
+      },
+      "end": "$"
+    },
+    {
+      "name": "string.quoted.double.waldbrand",
+      "begin": "\"",
+      "beginCaptures": { "0": { "name": "punctuation.definition.string.begin.waldbrand" } },
+      "end": "\"",
+      "endCaptures": { "0": { "name": "punctuation.definition.string.end.waldbrand" } }
+    }
+  ]
+}

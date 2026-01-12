@@ -1,0 +1,53 @@
+{
+  "name": "waldbrand",
+  "displayName": "Waldbrand",
+  "description": "Waldbrand Language Support",
+  "version": "0.1.0",
+  "publisher": "egor",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egor-bordunov/waldbrand-vscode"
+  },
+
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+
+  "categories": ["Programming Languages"],
+
+  "main": "./extension.js",
+
+  "activationEvents": [
+    "onLanguage:waldbrand"
+  ],
+
+  "contributes": {
+    "languages": [{
+      "id": "waldbrand",
+      "aliases": ["Waldbrand", "waldbrand"],
+      "extensions": [".w"],
+      "configuration": "./language-configuration.json"
+    }],
+
+    "grammars": [{
+      "language": "waldbrand",
+      "scopeName": "source.waldbrand",
+      "path": "./syntaxes/waldbrand.tmLanguage.json"
+    }],
+
+    "keybindings": [{
+      "command": "editor.action.insertSnippet",
+      "key": "f5",
+      "when": "editorLangId == waldbrand"
+    }],
+
+    "iconThemes": [
+      {
+        "id": "waldbrand-icons",
+        "label": "Waldbrand Icons",
+        "path": "./icon-theme/waldbrand-icon-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "waldbrand-file": {
+      "iconPath": "../icons/waldbrand.svg"
+    }
+  },
+  "fileExtensions": {
+    "w": "waldbrand-file"
+  }
+}
